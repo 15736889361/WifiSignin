@@ -45,10 +45,10 @@ public class LoginModelImpl implements ILoginModel
         return phoneMac;
     }
 
+    boolean isExist;
     @Override
     public boolean verifyUser(Context context, User user)
     {
-        final boolean isExist;
         String routerMac = getRouterMac(context);
         user.setRounterMac(routerMac);
 
@@ -61,14 +61,14 @@ public class LoginModelImpl implements ILoginModel
             public void done(List<User> list, BmobException e) {
                 if (e == null)
                 {
-
+                    isExist = true;
                 }
                 else
                 {
-
+                    isExist = false;
                 }
             }
         });
-        return false;
+        return isExist;
     }
 }
