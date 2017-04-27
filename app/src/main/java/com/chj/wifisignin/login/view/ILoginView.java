@@ -7,6 +7,8 @@ package com.chj.wifisignin.login.view;
 
 public interface ILoginView
 {
-    void showProgress();
+    void showProgress(String msg);
+
     void hideProgress();
+
 }

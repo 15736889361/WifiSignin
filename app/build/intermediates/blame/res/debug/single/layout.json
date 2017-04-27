@@ -12,16 +12,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_action.xml"
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",

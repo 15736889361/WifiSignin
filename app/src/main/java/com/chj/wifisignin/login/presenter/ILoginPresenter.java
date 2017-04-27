@@ -1,5 +1,7 @@
 package com.chj.wifisignin.login.presenter;
 
+import com.chj.wifisignin.beans.User;
+
 /**
  * author: WEI
  * date: 2017/4/26
@@ -7,5 +9,5 @@ package com.chj.wifisignin.login.presenter;
 
 public interface ILoginPresenter
 {
-    boolean verifyUser();
+    boolean verifyUser(User user);
 }

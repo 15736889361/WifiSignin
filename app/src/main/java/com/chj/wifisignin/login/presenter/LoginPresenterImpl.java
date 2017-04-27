@@ -1,12 +1,11 @@
 package com.chj.wifisignin.login.presenter;
 
-import android.app.Application;
 import android.content.Context;
 
+import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.login.model.ILoginModel;
 import com.chj.wifisignin.login.model.LoginModelImpl;
 import com.chj.wifisignin.login.view.ILoginView;
-import com.chj.wifisignin.login.view.LoginActivity;
 
 /**
  * author: WEI
@@ -27,9 +26,8 @@ public class LoginPresenterImpl implements ILoginPresenter
     }
 
     @Override
-    public boolean verifyUser()
+    public boolean verifyUser(User user)
     {
-        mILoginView.showProgress();
-        return false;
+        return mILoginModel.verifyUser(mContext, user);
     }
 }

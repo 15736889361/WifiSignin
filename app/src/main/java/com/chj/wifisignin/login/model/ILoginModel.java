@@ -1,5 +1,7 @@
 package com.chj.wifisignin.login.model;
 
+import android.content.Context;
+
 import com.chj.wifisignin.beans.User;
 
 /**
@@ -9,5 +11,9 @@ import com.chj.wifisignin.beans.User;
 
 public interface ILoginModel
 {
-    boolean verifyUser(User user);
+    String getRouterMac(Context context);
+
+    String getPhoneMac(Context context);
+
+    boolean verifyUser(Context context, User user);
 }

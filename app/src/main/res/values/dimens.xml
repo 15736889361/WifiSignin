@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="HalfOneDPPadding">0.5dip</dimen>
+    <dimen name="OneDPPadding">0.3dip</dimen>
+    <dimen name="SmallestPadding">2.0dip</dimen>
+    <dimen name="SmallerPadding">3.0dip</dimen>
+    <dimen name="BasicPaddingSize">4.0dip</dimen>
+    <dimen name="SmallPadding">11.0dip</dimen>
+    <dimen name="MiddlePadding">10.0dip</dimen>
+    <dimen name="NormalPadding">12.0dip</dimen>
+    <dimen name="LargePadding">16.0dip</dimen>
+    <dimen name="LargerPadding">24.0dip</dimen>
+    <dimen name="BigPadding">32.0dip</dimen>
+    <dimen name="LargestPadding">48.0dip</dimen>
+    <dimen name="ItemSpace">8.0dip</dimen>
+</resources>
