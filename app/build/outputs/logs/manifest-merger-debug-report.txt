@@ -83,12 +83,12 @@ ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:34:19-65
-activity#com.chj.wifisignin.MainActivity
+activity#com.chj.wifisignin.signin.view.MainActivity
 ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:38:9-40:20
 	android:screenOrientation
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:39:13-49
 	android:name
-		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:38:19-47
+		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:38:19-59
 uses-sdk
 INJECTED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\27634bbd4ed5ae110839786df64494101e403781\output\AndroidManifest.xml:21:5-23:78

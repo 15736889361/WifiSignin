@@ -4,15 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
-import com.chj.wifisignin.MainActivity;
+import com.chj.wifisignin.signin.view.MainActivity;
 import com.chj.wifisignin.R;
 import com.chj.wifisignin.base.BaseActivity;
 import com.chj.wifisignin.beans.User;

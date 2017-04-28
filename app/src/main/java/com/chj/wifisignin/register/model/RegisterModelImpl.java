@@ -71,7 +71,6 @@ public class RegisterModelImpl implements IRegisterModel
     @Override
     public void saveUser(final Context context, final User user, final Handler handler)
     {
-
         WifiInfo wifiInfo = getWifiInfo(context);
         String routerMac = "";
         if (null != wifiInfo)

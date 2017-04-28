@@ -66,4 +66,15 @@ public class Sign extends BmobObject
     public void setRouterMac(String routerMac) {
         this.routerMac = routerMac;
     }
+
+    @Override
+    public String toString() {
+        return "Sign{" +
+                "num='" + num + '\'' +
+                ", username='" + username + '\'' +
+                ", signin_time='" + signin_time + '\'' +
+                ", signout_time='" + signout_time + '\'' +
+                ", routerMac='" + routerMac + '\'' +
+                '}';
+    }
 }

@@ -41,7 +41,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.chj.wifisignin.MainActivity"
+            android:name="com.chj.wifisignin.signin.view.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
     </application>

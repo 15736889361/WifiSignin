@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.chj.wifisignin.base.Global;
 import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.util.LogUtil;
 import com.chj.wifisignin.util.ToastUtil;
@@ -85,6 +86,7 @@ public class LoginModelImpl implements ILoginModel
                             if (user1.getType() == user.getType())
                             {
                                 handler.obtainMessage(1).sendToTarget();
+                                Global.sUser = user;
                             }
                             else
                             {
