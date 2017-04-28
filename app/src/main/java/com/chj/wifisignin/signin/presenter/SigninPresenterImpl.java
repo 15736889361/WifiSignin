@@ -3,6 +3,7 @@ package com.chj.wifisignin.signin.presenter;
 import android.content.Context;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.chj.wifisignin.beans.Sign;
 import com.chj.wifisignin.signin.model.ISigninModel;
@@ -19,6 +20,7 @@ import java.util.List;
 
 public class SigninPresenterImpl implements ISigninPresenter
 {
+    private final String TAG = getClass().getSimpleName();
     private ISigninModel mSigninModel;
     private IMainView mMainView;
     private Context mContext;
@@ -44,8 +46,21 @@ public class SigninPresenterImpl implements ISigninPresenter
     }
 
     @Override
-    public List<Sign> getSigns()
+    public void getSigns()
     {
-        return mSigninModel.getSigns(mContext);
+        final StringBuffer buffer = new StringBuffer();
+        mSigninModel.getSigns(mContext, new SigninModelImpl.ISignInfos() {
+            @Override
+            public void getSigns(List<Sign> signs)
+            {
+                for (Sign sign:signs)
+                {
+                    Log.e(TAG, sign.toString());
+                    buffer.append(sign.toString());
+                    buffer.append("\n");
+                }
+            }
+        });
+
     }
 }

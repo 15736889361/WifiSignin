@@ -16,5 +16,5 @@ public interface ISigninModel
 {
     void signin(Context context, Sign sign, Handler handler);
 
-    List<Sign> getSigns(Context context);
+    void getSigns(Context context, SigninModelImpl.ISignInfos iSignInfos);
 }

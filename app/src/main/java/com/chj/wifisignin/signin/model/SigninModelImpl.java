@@ -11,6 +11,7 @@ import com.chj.wifisignin.signin.view.MainActivity;
 import com.chj.wifisignin.util.LogUtil;
 import com.chj.wifisignin.util.ToastUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
@@ -70,7 +71,7 @@ public class SigninModelImpl implements ISigninModel
     }
 
     @Override
-    public List<Sign> getSigns(Context context)
+    public void getSigns(Context context, final ISignInfos iSignInfos)
     {
         BmobQuery<Sign> query = new BmobQuery<>();
         String sql;
@@ -94,16 +95,27 @@ public class SigninModelImpl implements ISigninModel
                     List<Sign> signs = bmobQueryResult.getResults();
                     if (null != signs && signs.size() > 0)
                     {
-                        for (Sign sign:signs)
-                        {
-                            Log.e(TAG, sign.toString());
-                        }
+                        iSignInfos.getSigns(signs);
                     }
                 }else{
                     LogUtil.e(TAG, "错误码："+e.getErrorCode()+"，错误描述："+e.getMessage());
                 }
             }
         });
-        return null;
     }
+
+    public interface ISignInfos
+    {
+        void getSigns(List<Sign> signs);
+    }
+    private ISignInfos mISignInfos;
+
+    public ISignInfos getISignInfos() {
+        return mISignInfos;
+    }
+
+    public void setISignInfos(ISignInfos ISignInfos) {
+        mISignInfos = ISignInfos;
+    }
+
 }

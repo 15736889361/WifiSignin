@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.chj.wifisignin.R;
 import com.chj.wifisignin.base.BaseActivity;
@@ -18,6 +19,7 @@ import com.chj.wifisignin.util.TimeUtil;
 public class MainActivity extends BaseActivity implements IMainView
 {
     private Button signinBtn, signinHistoryBtn;
+    private TextView contentTv;
     private boolean isSignin = true;
     private ISigninPresenter mPresenter;
 
@@ -32,6 +34,17 @@ public class MainActivity extends BaseActivity implements IMainView
     protected void initView() {
         signinBtn = (Button) findViewById(R.id.btn_signin);
         signinHistoryBtn = (Button) findViewById(R.id.btn_signin_history);
+        contentTv = (TextView) findViewById(R.id.tv_content);
+        if (Global.sUser.getType() == Global.TEACHER)
+        {
+            signinBtn.setVisibility(View.GONE);
+            signinHistoryBtn.setText("查看签到情况");
+        }
+        else
+        {
+            signinBtn.setVisibility(View.VISIBLE);
+            signinHistoryBtn.setText("签到历史");
+        }
     }
 
     @Override
@@ -107,4 +120,8 @@ public class MainActivity extends BaseActivity implements IMainView
             }
         }
     };
+
+    public TextView getContentTv() {
+        return contentTv;
+    }
 }
