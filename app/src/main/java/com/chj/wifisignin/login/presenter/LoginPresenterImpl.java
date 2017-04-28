@@ -1,6 +1,7 @@
 package com.chj.wifisignin.login.presenter;
 
 import android.content.Context;
+import android.os.Handler;
 
 import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.login.model.ILoginModel;
@@ -26,8 +27,9 @@ public class LoginPresenterImpl implements ILoginPresenter
     }
 
     @Override
-    public boolean verifyUser(User user)
+    public void verifyUser(User user, Handler handler)
     {
-        return mILoginModel.verifyUser(mContext, user);
+        mILoginView.showProgress("正在登录，请稍候......");
+        mILoginModel.verifyUser(mContext, user, handler);
     }
 }

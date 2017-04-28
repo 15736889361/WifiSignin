@@ -1,5 +1,7 @@
 package com.chj.wifisignin.beans;
 
+import cn.bmob.v3.BmobObject;
+
 import static android.R.attr.type;
 
 /**
@@ -8,7 +10,7 @@ import static android.R.attr.type;
  * date: 2017/4/27
  */
 
-public class Sign
+public class Sign extends BmobObject
 {
     /**
      * 学生编号
@@ -23,7 +25,7 @@ public class Sign
      * 签退时间
      */
     private String signout_time;
-    private String rounterMac;
+    private String routerMac;
 
     public String getNum() {
         return num;
@@ -49,19 +51,19 @@ public class Sign
         this.signout_time = signout_time;
     }
 
-    public String getRounterMac() {
-        return rounterMac;
-    }
-
-    public void setRounterMac(String rounterMac) {
-        this.rounterMac = rounterMac;
-    }
-
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getRouterMac() {
+        return routerMac;
+    }
+
+    public void setRouterMac(String routerMac) {
+        this.routerMac = routerMac;
     }
 }

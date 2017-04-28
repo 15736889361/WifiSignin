@@ -60,6 +60,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -166,5 +170,9 @@
     {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bmob_update_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c09fbdb1e095b43552df86442e35f83c097ce98\\output\\res\\layout\\bmob_update_dialog.xml"
     }
 ]

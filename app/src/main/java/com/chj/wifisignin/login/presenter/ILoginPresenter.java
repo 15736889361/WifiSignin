@@ -1,5 +1,7 @@
 package com.chj.wifisignin.login.presenter;
 
+import android.os.Handler;
+
 import com.chj.wifisignin.beans.User;
 
 /**
@@ -9,5 +11,5 @@ import com.chj.wifisignin.beans.User;
 
 public interface ILoginPresenter
 {
-    boolean verifyUser(User user);
+    void verifyUser(User user, Handler handler);
 }

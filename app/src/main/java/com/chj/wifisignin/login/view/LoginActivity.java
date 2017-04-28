@@ -2,6 +2,8 @@ package com.chj.wifisignin.login.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -16,6 +18,7 @@ import com.chj.wifisignin.base.BaseActivity;
 import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.login.presenter.ILoginPresenter;
 import com.chj.wifisignin.login.presenter.LoginPresenterImpl;
+import com.chj.wifisignin.register.view.RegisterActivity;
 
 /**
  * author: WEI
@@ -64,19 +67,38 @@ public class LoginActivity extends BaseActivity implements ILoginView {
                     user.setNum(num);
                     user.setPassword(pass);
                     user.setType(studentRdoBtn.isChecked() ? 0 : 1);
-                    if (mILoginPresenter.verifyUser(user))
-                    {
-                        // 登录成功
-                        startActivity(new Intent(mContext, MainActivity.class));
-                    }
+
+                    mILoginPresenter.verifyUser(user, mHandler);
                 }
                 break;
 
             case R.id.btn_register:
                 // 注册操作
+                startActivity(new Intent(mContext, RegisterActivity.class));
                 break;
         }
     }
+
+    Handler mHandler = new Handler()
+    {
+        @Override
+        public void handleMessage(Message msg)
+        {
+            hideProgress();
+            super.handleMessage(msg);
+            switch (msg.what)
+            {
+                case 0:
+                    // 登录失败
+                    break;
+
+                case 1:
+                    // 登录成功
+                    startActivity(new Intent(mContext, MainActivity.class));
+                    break;
+            }
+        }
+    };
 
     private boolean valid()
     {

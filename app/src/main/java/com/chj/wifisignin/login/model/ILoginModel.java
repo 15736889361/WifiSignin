@@ -1,6 +1,7 @@
 package com.chj.wifisignin.login.model;
 
 import android.content.Context;
+import android.os.Handler;
 
 import com.chj.wifisignin.beans.User;
 
@@ -15,5 +16,5 @@ public interface ILoginModel
 
     String getPhoneMac(Context context);
 
-    boolean verifyUser(Context context, User user);
+    void verifyUser(Context context, User user, Handler handler);
 }

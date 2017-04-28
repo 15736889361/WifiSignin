@@ -3,7 +3,7 @@
     package="com.chj.wifisignin.test" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="25" />
 
     <instrumentation
