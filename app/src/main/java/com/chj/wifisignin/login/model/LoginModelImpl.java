@@ -61,12 +61,14 @@ public class LoginModelImpl implements ILoginModel
     {
         String routerMac = getRouterMac(context);
         if (TextUtils.isEmpty(routerMac))
-        {
+        { //未连上wifi，就不会有路由mac地址
             ToastUtil.showMsg(context, "设备未连接wifi，不能登录签到！", true);
+            handler.obtainMessage(0).sendToTarget();
             return;
         }
         user.setRouterMac(routerMac);
 
+        // 根据编号及mac地址查找是否有这样的用户信息
         String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";
         LogUtil.e(TAG, "sql = " + sql);
         BmobQuery<User> query = new BmobQuery<>();

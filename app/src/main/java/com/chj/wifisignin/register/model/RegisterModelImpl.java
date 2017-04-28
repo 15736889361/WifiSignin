@@ -80,6 +80,7 @@ public class RegisterModelImpl implements IRegisterModel
         if (TextUtils.isEmpty(routerMac))
         {
             ToastUtil.showMsg(context, "设备未连接wifi，不能进行注册！", true);
+            handler.obtainMessage(0).sendToTarget();
             return;
         }
         user.setRouterMac(routerMac);

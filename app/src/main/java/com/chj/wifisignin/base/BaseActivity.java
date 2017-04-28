@@ -19,6 +19,7 @@ import com.chj.wifisignin.R;
 
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener
 {
+    protected String TAG = "";
     protected Context mContext;
 
     @Override
@@ -26,6 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     {
         super.onCreate(savedInstanceState);
         mContext = this;
+        TAG = getClass().getSimpleName();
     }
 
     @Override

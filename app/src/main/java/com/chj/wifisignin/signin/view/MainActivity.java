@@ -3,6 +3,7 @@ package com.chj.wifisignin.signin.view;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.signin.presenter.ISigninPresenter;
 import com.chj.wifisignin.signin.presenter.SigninPresenterImpl;
 import com.chj.wifisignin.util.TimeUtil;
+
+import java.util.List;
 
 public class MainActivity extends BaseActivity implements IMainView
 {
@@ -73,7 +76,7 @@ public class MainActivity extends BaseActivity implements IMainView
                 }
                 else
                 {
-                    // 签退，成功后
+                    // 签退
                     Sign sign = new Sign();
                     User user = Global.sUser;
                     sign.setNum(user.getNum());
@@ -121,7 +124,16 @@ public class MainActivity extends BaseActivity implements IMainView
         }
     };
 
-    public TextView getContentTv() {
-        return contentTv;
+    @Override
+    public void showList(List<Sign> signs)
+    {
+        final StringBuffer buffer = new StringBuffer();
+        for (Sign sign:signs)
+        {
+            Log.e(TAG, sign.toString());
+            buffer.append(sign.toString());
+            buffer.append("\n");
+        }
+        contentTv.setText(buffer.toString());
     }
 }

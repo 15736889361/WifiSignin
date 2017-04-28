@@ -48,17 +48,11 @@ public class SigninPresenterImpl implements ISigninPresenter
     @Override
     public void getSigns()
     {
-        final StringBuffer buffer = new StringBuffer();
         mSigninModel.getSigns(mContext, new SigninModelImpl.ISignInfos() {
             @Override
             public void getSigns(List<Sign> signs)
             {
-                for (Sign sign:signs)
-                {
-                    Log.e(TAG, sign.toString());
-                    buffer.append(sign.toString());
-                    buffer.append("\n");
-                }
+                mMainView.showList(signs);
             }
         });
 
