@@ -9,9 +9,15 @@ import com.chj.wifisignin.beans.User;
 import com.chj.wifisignin.util.LogUtil;
 import com.chj.wifisignin.util.ToastUtil;
 
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.datatype.BmobQueryResult;
 import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.SQLQueryListener;
 import cn.bmob.v3.listener.SaveListener;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 import static com.chj.wifisignin.util.NetUtil.getWifiInfo;
 
 /**
@@ -63,8 +69,9 @@ public class RegisterModelImpl implements IRegisterModel
     }
 
     @Override
-    public void saveUser(final Context context, User user, final Handler handler)
+    public void saveUser(final Context context, final User user, final Handler handler)
     {
+
         WifiInfo wifiInfo = getWifiInfo(context);
         String routerMac = "";
         if (null != wifiInfo)
@@ -72,14 +79,43 @@ public class RegisterModelImpl implements IRegisterModel
             routerMac = wifiInfo.getBSSID();
         }
         user.setRouterMac(routerMac);
-        user.save(new SaveListener<String>() {
+
+        String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";
+        LogUtil.e(TAG, "sql = " + sql);
+        BmobQuery<User> query = new BmobQuery<>();
+        query.setSQL(sql);
+        query.doSQLQuery(sql, new SQLQueryListener<User>() {
             @Override
-            public void done(String s, BmobException e) {
-                if(e==null)
+            public void done(BmobQueryResult<User> bmobQueryResult, BmobException e) {
+                if (e == null)
                 {
-                    handler.obtainMessage(1).sendToTarget();
-                }else{
-                    LogUtil.e(TAG, e.getMessage());
+                    List<User> users = bmobQueryResult.getResults();
+                    if (null != users && users.size() > 0)
+                    {
+                       // 表示该账户已经在该路由器成功注册过，不能再注册
+                        ToastUtil.showMsg(context, "该账户已经在该路由器成功注册过，可直接登录！", true);
+                        handler.obtainMessage(2).sendToTarget();
+                    }
+                    else
+                    {
+                        // 该账户未注册，可以进行注册操作
+                        user.save(new SaveListener<String>() {
+                            @Override
+                            public void done(String s, BmobException e) {
+                                if(e==null)
+                                {
+                                    handler.obtainMessage(1).sendToTarget();
+                                }else{
+                                    LogUtil.e(TAG, e.getMessage());
+                                    handler.obtainMessage(0).sendToTarget();
+                                }
+                            }
+                        });
+                    }
+                }
+                else
+                {
+                    ToastUtil.showMsg(context, "错误码："+e.getErrorCode()+"，错误描述："+e.getMessage(), true);
                     handler.obtainMessage(0).sendToTarget();
                 }
             }

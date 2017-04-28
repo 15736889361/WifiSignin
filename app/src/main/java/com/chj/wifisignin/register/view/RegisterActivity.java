@@ -88,6 +88,10 @@ public class RegisterActivity extends BaseActivity implements IRegisterView
                     showMsg("注册成功！");
                     finish();
                     break;
+
+                case 2:
+                    finish();
+                    break;
             }
         }
     };
