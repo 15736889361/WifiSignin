@@ -100,6 +100,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\19ea7b086bc70d7e881b956bcc3e20d58847b0fc\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_sign.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\layout\\item_sign.xml"
+    },
+    {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\19ea7b086bc70d7e881b956bcc3e20d58847b0fc\\output\\res\\layout\\abc_screen_toolbar.xml"
     },

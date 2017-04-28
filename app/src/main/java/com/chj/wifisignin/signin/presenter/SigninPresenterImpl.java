@@ -55,6 +55,5 @@ public class SigninPresenterImpl implements ISigninPresenter
                 mMainView.showList(signs);
             }
         });
-
     }
 }

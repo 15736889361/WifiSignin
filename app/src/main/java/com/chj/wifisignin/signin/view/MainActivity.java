@@ -6,6 +6,7 @@ import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.chj.wifisignin.R;
@@ -13,18 +14,21 @@ import com.chj.wifisignin.base.BaseActivity;
 import com.chj.wifisignin.base.Global;
 import com.chj.wifisignin.beans.Sign;
 import com.chj.wifisignin.beans.User;
+import com.chj.wifisignin.signin.SignAdapter;
 import com.chj.wifisignin.signin.presenter.ISigninPresenter;
 import com.chj.wifisignin.signin.presenter.SigninPresenterImpl;
 import com.chj.wifisignin.util.TimeUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends BaseActivity implements IMainView
 {
     private Button signinBtn, signinHistoryBtn;
-    private TextView contentTv;
+    private ListView mListView;
     private boolean isSignin = true;
     private ISigninPresenter mPresenter;
+    private Sign sign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,7 @@ public class MainActivity extends BaseActivity implements IMainView
     protected void initView() {
         signinBtn = (Button) findViewById(R.id.btn_signin);
         signinHistoryBtn = (Button) findViewById(R.id.btn_signin_history);
-        contentTv = (TextView) findViewById(R.id.tv_content);
+        mListView = (ListView) findViewById(R.id.lv_content);
         if (Global.sUser.getType() == Global.TEACHER)
         {
             signinBtn.setVisibility(View.GONE);
@@ -67,20 +71,21 @@ public class MainActivity extends BaseActivity implements IMainView
                     isSignin = !isSignin;
                     signinBtn.setText("签退");
                     // 签到
-                    Sign sign = new Sign();
+                    sign = new Sign();
                     User user = Global.sUser;
                     sign.setNum(user.getNum());
                     sign.setRouterMac(user.getRouterMac());
-                    sign.setSignin_time(TimeUtil.getTime(System.currentTimeMillis()));
+                    Global.signin_time = TimeUtil.getTime(System.currentTimeMillis());
+                    sign.setSignin_time(Global.signin_time);
                     mPresenter.signin(sign, mHandler);
                 }
                 else
                 {
                     // 签退
-                    Sign sign = new Sign();
-                    User user = Global.sUser;
-                    sign.setNum(user.getNum());
-                    sign.setRouterMac(user.getRouterMac());
+//                    sign = new Sign();
+//                    User user = Global.sUser;
+//                    sign.setNum(user.getNum());
+//                    sign.setRouterMac(user.getRouterMac());
                     sign.setSignout_time(TimeUtil.getTime(System.currentTimeMillis()));
                     mPresenter.signin(sign, mHandler);
                 }
@@ -112,10 +117,16 @@ public class MainActivity extends BaseActivity implements IMainView
                     break;
 
                 case SIGNIN_SUCCEED:
+                    List<Sign> signs =  new ArrayList<>();
+                    signs.add(sign);
+                    showList(signs);
                     break;
 
                 case SIGNOUT_SUCCEED:
                     signinBtn.setVisibility(View.GONE);
+                    List<Sign> signs1 =  new ArrayList<>();
+                    signs1.add(sign);
+                    showList(signs1);
                     break;
 
                 case SIGNOUT_FAILURE:
@@ -134,6 +145,7 @@ public class MainActivity extends BaseActivity implements IMainView
             buffer.append(sign.toString());
             buffer.append("\n");
         }
-        contentTv.setText(buffer.toString());
+        SignAdapter adapter = new SignAdapter(mContext, signs);
+        mListView.setAdapter(adapter);
     }
 }

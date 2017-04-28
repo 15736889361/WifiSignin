@@ -12,4 +12,6 @@ public class Global
     public static User sUser;
     public static final int TEACHER = 1;
     public static final int STUDENT = 0;
+
+    public static String signin_time = "";
 }
