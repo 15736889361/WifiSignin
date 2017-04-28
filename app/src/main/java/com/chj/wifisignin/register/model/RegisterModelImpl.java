@@ -78,6 +78,11 @@ public class RegisterModelImpl implements IRegisterModel
         {
             routerMac = wifiInfo.getBSSID();
         }
+        if (TextUtils.isEmpty(routerMac))
+        {
+            ToastUtil.showMsg(context, "设备未连接wifi，不能进行注册！", true);
+            return;
+        }
         user.setRouterMac(routerMac);
 
         String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";

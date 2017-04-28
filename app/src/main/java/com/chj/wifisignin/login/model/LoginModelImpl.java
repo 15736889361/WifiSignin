@@ -3,6 +3,7 @@ package com.chj.wifisignin.login.model;
 import android.content.Context;
 import android.net.wifi.WifiInfo;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.util.Log;
 
 import com.chj.wifisignin.beans.User;
@@ -58,6 +59,11 @@ public class LoginModelImpl implements ILoginModel
     public void verifyUser(final Context context, final User user, final Handler handler)
     {
         String routerMac = getRouterMac(context);
+        if (TextUtils.isEmpty(routerMac))
+        {
+            ToastUtil.showMsg(context, "设备未连接wifi，不能登录签到！", true);
+            return;
+        }
         user.setRouterMac(routerMac);
 
         String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";
