@@ -26,6 +26,7 @@ public class Sign extends BmobObject
      */
     private String signout_time;
     private String routerMac;
+    private String wifi;
 
     public String getNum() {
         return num;
@@ -76,5 +77,13 @@ public class Sign extends BmobObject
                 ", signout_time='" + signout_time + '\'' +
                 ", routerMac='" + routerMac + '\'' +
                 '}';
+    }
+
+    public String getWifi() {
+        return wifi;
+    }
+
+    public void setWifi(String wifi) {
+        this.wifi = wifi;
     }
 }

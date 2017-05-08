@@ -21,6 +21,10 @@ public class User extends BmobObject
      */
     private String routerMac;
     /**
+     * wifi 名
+     */
+    private String wifi;
+    /**
      * type = 1，身份为老师
      * type = 0，身份为学生
      */
@@ -85,5 +89,13 @@ public class User extends BmobObject
     public String getRouterMac()
     {
         return routerMac;
+    }
+
+    public String getWifi() {
+        return wifi;
+    }
+
+    public void setWifi(String wifi) {
+        this.wifi = wifi;
     }
 }

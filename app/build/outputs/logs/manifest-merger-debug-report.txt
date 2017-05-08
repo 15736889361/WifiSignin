@@ -39,16 +39,16 @@ ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:16:22-72
 application
 ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:18:5-41:19
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\19ea7b086bc70d7e881b956bcc3e20d58847b0fc\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\97ac6ddd6d5473d19eafd0d6876852254a9c1806\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\ca781fd4b737e0680ef9d39663471bdf91f82d0b\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\9bd7889c39975e0216e28de54bd4c73fb10b830c\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Administrator\.android\build-cache\a211a300b117a382376660a200e18702c937e445\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\7b67af15e31eeff0f7957ddfc129e7857fe73e49\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\bc8ff27d2273781a86640db005d9abb5bfa7efdd\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\a3a28c57253ae3c5afab3d73ccbf23c4c900df13\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Administrator\.android\build-cache\931275be39a24aba8c0392f89c2b0c6030c56300\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] C:\Users\Administrator\.android\build-cache\a35a8e961af21090a745ccfd07134d61d3af4033\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] C:\Users\Administrator\.android\build-cache\4371eb246982ba9579f6dc7a08d528c683cb7402\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\27634bbd4ed5ae110839786df64494101e403781\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\52e28c5cb6d11a74d0b54ec28a158c545ddf40c3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\b8049094b897b27e65c1536e319236fb0b4e7079\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\ca36414abe1b5db1f590c85d55e8d89337478522\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Administrator\.android\build-cache\59730daa341d9e88036d99c6f7297050e00b2cff\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\b5466d9d178ffd5bbc53836c550be8f93822764c\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\44239e6900f4e91ab09fb1af9771a5eea05183d7\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\d718381c2e073922937d37bdc4dfae197c2b8006\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Administrator\.android\build-cache\b373f6d0021a0897d0437b54736966aa0d35dd41\output\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:22:9-41
 	android:supportsRtl
@@ -91,18 +91,18 @@ ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.
 		ADDED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml:38:19-59
 uses-sdk
 INJECTED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\19ea7b086bc70d7e881b956bcc3e20d58847b0fc\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\97ac6ddd6d5473d19eafd0d6876852254a9c1806\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\ca781fd4b737e0680ef9d39663471bdf91f82d0b\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\9bd7889c39975e0216e28de54bd4c73fb10b830c\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Administrator\.android\build-cache\a211a300b117a382376660a200e18702c937e445\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\7b67af15e31eeff0f7957ddfc129e7857fe73e49\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\bc8ff27d2273781a86640db005d9abb5bfa7efdd\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\a3a28c57253ae3c5afab3d73ccbf23c4c900df13\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Administrator\.android\build-cache\931275be39a24aba8c0392f89c2b0c6030c56300\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] C:\Users\Administrator\.android\build-cache\a35a8e961af21090a745ccfd07134d61d3af4033\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha8] C:\Users\Administrator\.android\build-cache\4371eb246982ba9579f6dc7a08d528c683cb7402\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\27634bbd4ed5ae110839786df64494101e403781\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\52e28c5cb6d11a74d0b54ec28a158c545ddf40c3\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\b8049094b897b27e65c1536e319236fb0b4e7079\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\ca36414abe1b5db1f590c85d55e8d89337478522\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Administrator\.android\build-cache\59730daa341d9e88036d99c6f7297050e00b2cff\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\b5466d9d178ffd5bbc53836c550be8f93822764c\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\44239e6900f4e91ab09fb1af9771a5eea05183d7\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\d718381c2e073922937d37bdc4dfae197c2b8006\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\Administrator\.android\build-cache\b373f6d0021a0897d0437b54736966aa0d35dd41\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\19ea7b086bc70d7e881b956bcc3e20d58847b0fc\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\27634bbd4ed5ae110839786df64494101e403781\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml
 		INJECTED from D:\WEI\AndroidStudioProjects\WifiSignin\app\src\main\AndroidManifest.xml
