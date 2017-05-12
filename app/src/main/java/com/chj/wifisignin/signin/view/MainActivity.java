@@ -29,6 +29,7 @@ public class MainActivity extends BaseActivity implements IMainView
     private boolean isSignin = true;
     private ISigninPresenter mPresenter;
     private Sign sign;
+    private boolean isShouldClosed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +128,7 @@ public class MainActivity extends BaseActivity implements IMainView
                     List<Sign> signs1 =  new ArrayList<>();
                     signs1.add(sign);
                     showList(signs1);
+                    isShouldClosed = true;
                     break;
 
                 case SIGNOUT_FAILURE:
@@ -147,5 +149,18 @@ public class MainActivity extends BaseActivity implements IMainView
         }
         SignAdapter adapter = new SignAdapter(mContext, signs);
         mListView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        if (isShouldClosed)
+        {
+            finish();
+        }
+        else
+        {
+            showMsg("您还未签退，不能退出系统！");
+        }
     }
 }

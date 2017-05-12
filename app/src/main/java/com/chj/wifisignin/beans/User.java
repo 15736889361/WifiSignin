@@ -21,6 +21,10 @@ public class User extends BmobObject
      */
     private String routerMac;
     /**
+     * 手机或平板的mac地址，也是唯一的
+     */
+    private String mac;
+    /**
      * wifi 名
      */
     private String wifi;
@@ -97,5 +101,13 @@ public class User extends BmobObject
 
     public void setWifi(String wifi) {
         this.wifi = wifi;
+    }
+
+    public String getMac() {
+        return mac;
+    }
+
+    public void setMac(String mac) {
+        this.mac = mac;
     }
 }

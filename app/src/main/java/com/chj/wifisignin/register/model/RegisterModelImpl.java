@@ -84,6 +84,7 @@ public class RegisterModelImpl implements IRegisterModel
             return;
         }
         user.setRouterMac(routerMac);
+        user.setMac(wifiInfo.getMacAddress());
         user.setWifi(wifiInfo.getSSID());
 
         String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";

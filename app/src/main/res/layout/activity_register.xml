@@ -3,6 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:background="@color/bg_common"
               android:padding="@dimen/NormalPadding">
 
     <EditText
@@ -11,6 +12,7 @@
         android:layout_height="wrap_content"
         android:maxLength="11"
         android:inputType="number"
+        style="@style/EditTextStyle"
         android:hint="请输入学生/老师编号"/>
 
     <EditText
@@ -18,6 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入密码"
+        android:layout_marginTop="@dimen/MiddlePadding"
+        android:layout_marginBottom="@dimen/MiddlePadding"
+        style="@style/EditTextStyle"
         android:password="true"/>
 
     <EditText
@@ -25,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请再次输入密码"
+        style="@style/EditTextStyle"
         android:password="true"/>
 
     <LinearLayout
@@ -72,6 +78,8 @@
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        style="@style/BtnTxtStyle"
         android:text="注册"/>
 
 </LinearLayout>

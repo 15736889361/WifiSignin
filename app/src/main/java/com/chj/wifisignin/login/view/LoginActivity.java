@@ -65,7 +65,6 @@ public class LoginActivity extends BaseActivity implements ILoginView {
                     user.setNum(num);
                     user.setPassword(pass);
                     user.setType(studentRdoBtn.isChecked() ? 0 : 1);
-
                     mILoginPresenter.verifyUser(user, mHandler);
                 }
                 break;
@@ -93,6 +92,7 @@ public class LoginActivity extends BaseActivity implements ILoginView {
                 case 1:
                     // 登录成功
                     startActivity(new Intent(mContext, MainActivity.class));
+                    finish();
                     break;
             }
         }

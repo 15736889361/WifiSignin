@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:maxLength="11"
         android:inputType="number"
-        android:padding="@dimen/NormalPadding"
-        android:background="@drawable/shape_editor_bg_selector"
+        style="@style/EditTextStyle"
         android:hint="请输入学生/老师编号"/>
 
     <EditText
@@ -22,8 +21,7 @@
         android:layout_height="wrap_content"
         android:hint="请输入密码"
         android:layout_marginTop="@dimen/MiddlePadding"
-        android:padding="@dimen/NormalPadding"
-        android:background="@drawable/shape_editor_bg_selector"
+        style="@style/EditTextStyle"
         android:password="true"/>
 
     <LinearLayout
@@ -71,12 +69,17 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        style="@style/BtnTxtStyle"
         android:text="登录"/>
 
     <Button
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MiddlePadding"
+        android:background="@drawable/btn_selector"
+        style="@style/BtnTxtStyle"
         android:text="注册"/>
 
 </LinearLayout>

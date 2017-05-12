@@ -67,6 +67,7 @@ public class LoginModelImpl implements ILoginModel
             return;
         }
         user.setRouterMac(routerMac);
+        user.setMac(getPhoneMac(context));
 
         // 根据编号及mac地址查找是否有这样的用户信息
         String sql = "select * from User where routerMac = '" + routerMac + "' and num = '" + user.getNum() + "'";
@@ -116,4 +117,5 @@ public class LoginModelImpl implements ILoginModel
             }
         });
     }
+
 }

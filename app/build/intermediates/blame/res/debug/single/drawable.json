@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_editor_bg_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\drawable\\shape_editor_bg_selector.xml"
+    },
+    {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
@@ -124,6 +128,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_btn_red_stroke.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\drawable\\shape_btn_red_stroke.xml"
+    },
+    {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
@@ -138,6 +146,14 @@
     {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\27634bbd4ed5ae110839786df64494101e403781\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_btn_gray_stroke.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\drawable\\shape_btn_gray_stroke.xml"
+    },
+    {
+        "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_selector.xml",
+        "source": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\src\\main\\res\\drawable\\btn_selector.xml"
     },
     {
         "merged": "D:\\WEI\\AndroidStudioProjects\\WifiSignin\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

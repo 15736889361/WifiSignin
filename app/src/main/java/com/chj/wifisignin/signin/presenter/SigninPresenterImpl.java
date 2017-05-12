@@ -48,10 +48,12 @@ public class SigninPresenterImpl implements ISigninPresenter
     @Override
     public void getSigns()
     {
+        mMainView.showProgress("正在获取学生签到数据......");
         mSigninModel.getSigns(mContext, new SigninModelImpl.ISignInfos() {
             @Override
             public void getSigns(List<Sign> signs)
             {
+                mMainView.hideProgress();
                 mMainView.showList(signs);
             }
         });
